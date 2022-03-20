@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+    /*
+    CLASE 3
+    */
     public function mostrar(){
         //return view('producto');
         return ('Desde el controlador');
@@ -31,6 +34,14 @@ class ProductController extends Controller
         $proveedores = ['apple', 'google'];
         //compact sirve para enviar mas rapido valores
         return view('products.index', compact('products', 'proveedores'));
+    }
+
+    /*
+    CLASE 4
+    */
+
+    public function mostrarProducts(){
+        return view('products.index');
     }
 
 }

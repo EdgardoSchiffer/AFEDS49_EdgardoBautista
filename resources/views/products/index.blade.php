@@ -1,16 +1,19 @@
-<h1>Carpeta</h1>
-@foreach ($products as $product)
+@extends("layouts.app")
 
-    <li>{{$product}}</li>
-
-@endforeach
-
-
-
-<h1>Proveedores</h1>
-
-@foreach ($proveedores as $proveedor)
-
-    <li>{{$proveedor}}</li>
-
-@endforeach
+@section('content')
+<h1>Productos</h1>
+<h2>Administracion de productos</h2>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+@endsection
